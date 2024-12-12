@@ -9,11 +9,15 @@ body {
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   text-align: center;
   padding: 32px;
   background-color: #0a0a23;
   color: #fff;
   border-bottom: 4px solid #fdb347;
+  z-index: 1000;
 }
 
 .gallery {
@@ -24,7 +28,7 @@ body {
   align-items: center;
   padding: 20px 10px;
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 150px auto 0 auto;
   gap: 16px;
 }
 .gallery img {
