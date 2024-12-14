@@ -16,6 +16,9 @@ fetchDogBreeds
           (breed) => `<option value="${breed}">${capitalize(breed)}</option>`
         )
         .join("");
+  })
+  .catch((error) => {
+    console.error("Error fetching dog breeds", error);
   });
 
 function capitalize(string) {
@@ -39,6 +42,9 @@ function renderDogImages(breed) {
             }"/></a>`
         )
         .join("")}`;
+    })
+    .catch((error) => {
+      console.error("Error fetching dog images", error);
     });
 }
 
