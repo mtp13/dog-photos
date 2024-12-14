@@ -7,15 +7,10 @@ fetchDogBreeds
     return response.json();
   })
   .then((breedsData) => {
-    const defaultOption = '<option value="labrador" >Labrador</option>';
     const breeds = breedsData.message;
-    $breedSelect.innerHTML =
-      defaultOption +
-      Object.keys(breeds)
-        .map(
-          (breed) => `<option value="${breed}">${capitalize(breed)}</option>`
-        )
-        .join("");
+    $breedSelect.innerHTML += Object.keys(breeds)
+      .map((breed) => `<option value="${breed}">${capitalize(breed)}</option>`)
+      .join("");
   })
   .catch((error) => {
     console.error("Error fetching dog breeds", error);
