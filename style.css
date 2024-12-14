@@ -3,31 +3,36 @@
 }
 
 body {
-  margin: 0;
   font-family: sans-serif;
   background: #f5f6f7;
   font-size: 16px;
 }
 
 .header {
-  /* position: fixed; */
-  /* top: 0; */
+  position: fixed;
+  top: 0;
   width: 100%;
   text-align: center;
   padding: 32px;
   background-color: #0a0a23;
   color: #fff;
   border-bottom: 4px solid #fdb347;
-  /* z-index: 1000; */
+  z-index: 1000;
 }
 
-.breed-display {
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.breed-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 10px;
   max-width: 1400px;
   margin: 0 auto;
+  margin-top: 150px;
 }
 .breed-label {
   font-size: 1.5rem;
@@ -35,14 +40,13 @@ body {
   font-weight: bold;
   display: inline-block;
   margin-bottom: 8px;
-  margin: 0;
   margin-right: 10px;
 }
 
 .breed-select {
   display: inline-block;
-  width: 200px; /* Adjust the width as needed */
-  font-size: 1.2rem; /* Larger font size */
+  width: 200px;
+  font-size: 1.5rem;
 }
 
 .gallery {
@@ -58,7 +62,7 @@ body {
 }
 .gallery img {
   width: 100%;
-  max-width: 350px;
+  width: 350px;
   height: 300px;
   object-fit: cover;
   border-radius: 10px;

@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dog Photo Gallery</title>
@@ -9,10 +10,10 @@
 
   <body>
     <header class="header">
-      <h1>dog photo gallery</h1>
+      <h1>Dog Photo Gallery</h1>
     </header>
 
-    <div class="breed-display">
+    <div class="breed-wrapper">
       <label for="breed-select" class="breed-label">Select a breed: </label>
       <select
         name="breed-select"
@@ -21,8 +22,7 @@
       ></select>
     </div>
 
-    <div class="gallery">
-      <script src="index.js"></script>
-    </div>
+    <div class="gallery"></div>
+    <script src="index.js"></script>
   </body>
 </html>

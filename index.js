@@ -32,7 +32,12 @@ function renderDogImages(breed) {
     .then((dogData) => {
       const dogUrls = dogData.message;
       $gallery.innerHTML = `${dogUrls
-        .map((url, index) => `<img src="${url}" alt="dog photo ${index + 1}"/>`)
+        .map(
+          (url, index) =>
+            `<a href="${url}"><img src="${url}" alt="dog photo ${
+              index + 1
+            }"/></a>`
+        )
         .join("")}`;
     });
 }
