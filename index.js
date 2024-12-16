@@ -1,3 +1,5 @@
+"use strict";
+
 const $gallery = document.querySelector(".gallery");
 const $breedSelect = document.querySelector(".breed-select");
 
